@@ -1,0 +1,16 @@
+<div class="container">
+  <div class="row mx-0">
+    <p>
+      This is what I'm all about.
+    </p>
+  </div>
+
+  <button type="button" class="btn btn-primary" (click)="sendMeHome()">
+    Take me back
+  </button>
+  <ul>
+    <li *ngFor="let goal of goals">
+      {{ goal }}
+    </li>
+  </ul>
+</div>
