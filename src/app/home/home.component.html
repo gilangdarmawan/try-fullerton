@@ -1,21 +1,241 @@
-<div class="container" [@goals]="goals.length">
-  <div class="row mt-5">
-    <div class="col-4 mx-auto">
-      <div class="h4">Add Bucket List</div>
-      <p>Use this form below to add a new bucket list goal. What do you want to accomplish in your life?</p>
-      <form>
-        <div class="form-group">
-          <input type="text" class="form-control" name="item" placeholder="Life goal.." [(ngModel)]="goalText">
-          <small>This is what you type :<br>{{ goalText }}</small>
+<div id="fullpage">
+  <div class="section cover-page">
+    <div class="row mx-0 w-100">
+      <div class="col-xl-4 col-md-7 col-12 ml-lg-auto mr-lg-0 mx-md-auto d-flex justify-content-center flex-column text-white">
+        <div class="row mx-0 mb-2 text-md-left text-center">
+          <div class="h1 font-weight-normal text-capitalize">
+            Build a business around the global financial market and get full access.
+          </div>
+          <div class="h5 font-weight-normal mt-3 w-100">Join Now!</div>
         </div>
-        <input type="submit" class="btn btn-primary" value="{{ btnText }}" (click)="addItem()">
-      </form>
+        <div class="row mx-0 no-gutters align-items-center">
+          <div class="col-md-auto col-5 mb-2 mx-md-0 mx-auto">
+            <a href="#" class="btn btn-success btn-block d-flex flex-md-row flex-column">
+              <span>LIVE</span>
+              <span class="d-none d-md-block">&nbsp;</span>
+              <span>ACCOUNT</span>
+            </a>
+          </div>
+          <div class="col-md-auto mb-2 px-3 col-12 text-center d-none d-md-block">
+            <span>OR</span>
+          </div>
+          <div class="col-md-auto mb-2 col-5 mx-md-0 mx-auto">
+            <a href="#" class="btn btn-secondary btn-block d-flex flex-md-row flex-column">
+              <span>DEMO</span>
+              <span class="d-none d-md-block">&nbsp;</span>
+              <span>ACCOUNT</span>
+            </a>
+          </div>
+        </div>
+        <div class="row mx-0 no-gutters mt-4 small">
+          <div class="col-md-3 col-4">
+            Leverage
+          </div>
+          <div class="col-md-9 col-8">
+            : Up to 1 : 500
+          </div>
+          <div class="col-md-3 col-4">
+            Spread
+          </div>
+          <div class="col-md-9 col-8">
+            : Starting as low as 0.3 pips
+          </div>
+          <div class="col-md-3 col-4">
+            Min Trade Size
+          </div>
+          <div class="col-md-9 col-8">
+            : 0.01 lot
+          </div>
+          <div class="col-md-3 col-4">
+            24-hour Support
+          </div>
+          <div class="col-md-9 col-8">
+            : Yes
+          </div>
+        </div>
+      </div>
+      <div class="col-md-1 d-none d-lg-block">
+      </div>
     </div>
-    <div class="col-4 mx-auto">
-      <div class="h4">Your Bucket List ({{ itemCount }})</div>
-      <p *ngFor="let goal of goals; let i = index" (click)="removeItem(i)">
-        {{ goal }}
-      </p>
+  </div>
+  <div class="section">
+    <div class="container second-page">
+      <div class="row no-gutters align-items-center">
+        <div class="col-md-7 col-12 mr-auto">
+          <div class="row mx-0">
+            <div class="title-large font-weight-bold text-capitalize">
+              Asia's fastest growing brokerage firm
+            </div>
+            <div class="h6 font-weight-normal mb-3">
+              Fullerton Markets is proud to have clinched the
+              <br>
+              <b>Global Banking and Finance Review award.</b>
+            </div>
+          </div>
+          <a href="#" class="btn btn-secondary btn-lg mt-md-5 mt-1">LEARN MORE</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="section bg-flat">
+    <div class="container">
+      <div class="row mx-0 justify-content-center">
+        <div class="title-large font-weight-bold text-capitalize">
+          THE FULLERTON EDGE
+        </div>
+        <div class="h6 font-weight-normal">
+          Fullerton Markets offer exceptional services and unparalleled fund safety for all traders.
+        </div>
+      </div>
+      <div class="row no-gutters text-center my-5">
+        <div class="col-md col-12">
+          <img src="/assets/features-1.png" alt="" class="img-fluid">
+          <div class="h5 mt-2 font-weight-normal">Unparalleled Fund Safety</div>
+        </div>
+        <div class="col-md col-12">
+          <img src="/assets/features-2.png" alt="" class="img-fluid">
+          <div class="h5 mt-2 font-weight-normal">Global Credibility</div>
+        </div>
+        <div class="col-md col-12">
+          <img src="/assets/features-3.png" alt="" class="img-fluid">
+          <div class="h5 mt-2 font-weight-normal">Lightning Speed Execution</div>
+        </div>
+        <div class="col-md col-12">
+          <img src="/assets/features-4.png" alt="" class="img-fluid">
+          <div class="h5 mt-2 font-weight-normal">Tier One Liquidity Providers</div>
+        </div>
+        <div class="col-md col-12">
+          <img src="/assets/features-5.png" alt="" class="img-fluid">
+          <div class="h5 mt-2 font-weight-normal">24 Hours Dedicated Support</div>
+        </div>
+      </div>
+      <div class="row no-gutters justify-content-center">
+        <a href="#" class="btn btn-secondary btn-lg">LEARN MORE</a>
+      </div>
+    </div>
+  </div>
+  <div class="section">
+    <div class="container-fluid px-0">
+      <div class="row mx-0 text-center">
+        <div class="col-md-4 col-12 bp-1">
+          <div class="title-large text-capitalize font-weight-bold text-white">
+            Introducing
+            <br>Broker
+          </div>
+          <div class="h6 font-weight-normal bp-desc">
+            Manage and run one or several business portfolios under the coveted brand of Fullerton Markets.
+          </div>
+          <a href="#" class="btn btn-secondary btn-lg text-uppercase mt-3">Be an IB</a>
+        </div>
+        <div class="col-md-4 col-12 bp-2">
+          <div class="title-large text-capitalize font-weight-bold text-white">
+            Money
+            <br>Manager
+          </div>
+          <div class="h6 font-weight-normal bp-desc">
+            Play a critical role in managing client assets on our trading platform.
+          </div>
+          <a href="#" class="btn btn-secondary btn-lg text-uppercase mt-3">Be a Money Manager</a>
+        </div>
+        <div class="col-md-4 col-12 bp-3">
+          <div class="title-large text-capitalize font-weight-bold text-white">
+            White
+            <br>Label
+          </div>
+          <div class="h6 font-weight-normal bp-desc">
+            Get peace of mind with us doing the heavy lifting for you so that you can focus purely on your strength – marketing and business-building
+          </div>
+          <a href="#" class="btn btn-secondary btn-lg text-uppercase mt-3">Be a White Label</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer fp-auto-height">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4 col-12">
+          <img src="/assets/logo.png" class="img-fluid" alt="" style="max-width: 180px;">
+          <div class="row mx-0 mt-4">
+            <div class="small">Fullerton Markets is Asia's fastest growing brokerage firm. Enjoy unmatched fund safety which comes with Trustee
+              Liability insurance.</div>
+            <div class="small mt-2">
+              <b>Fullerton Markets Limited</b>
+              <br> West Plaza, Level 8, 3 Albert Street,
+              <br> Auckland, 1010, New Zealand
+              <br>
+              <br> Contact us : +64 9 352 2029
+            </div>
+          </div>
+        </div>
+        <div class="col-md-7 col-12 mx-auto">
+          <div class="row mx-0">
+            <div class="col-md-4 col-12">
+              <span class="ft-title">Explore</span>
+              <ul>
+                <li>
+                  <a href="#" class="links">CEO Message</a>
+                </li>
+                <li>
+                  <a href="#" class="links">Fullertone Edge</a>
+                </li>
+                <li>
+                  <a href="#" class="links">Sponsorship</a>
+                </li>
+                <li>
+                  <a href="#" class="links">Fullerton Foundation</a>
+                </li>
+                <li>
+                  <a href="#" class="links">Our Awards</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-12">
+              <span class="ft-title">Useful Links</span>
+              <ul>
+                <li>
+                  <a href="#" class="links">Partnership</a>
+                </li>
+                <li>
+                  <a href="#" class="links">Copy Trading</a>
+                </li>
+                <li>
+                  <a href="#" class="links">Promotions</a>
+                </li>
+                <li>
+                  <a href="#" class="links">Career</a>
+                </li>
+                <li>
+                  <a href="#" class="links">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4 col-12">
+              <span class="ft-title">Newsletter</span>
+              <form class="social-links mb-5">
+                <div class="form-group">
+                  <input type="email" class="form-control" id="email" aria-describedby="email" placeholder="Enter email">
+                </div>
+                <button type="submit" class="btn btn-secondary text-uppercase">Subscribe</button>
+              </form>
+              <span class="ft-title">Follow Us</span>
+              <div class="d-flex social-links">
+                <a href="#" class="links mr-3">
+                  <i class="fa fa-linkedin fa-lg"></i>
+                </a>
+                <a href="#" class="links mr-3">
+                  <i class="fa fa-facebook fa-lg"></i>
+                </a>
+                <a href="#" class="links mr-3">
+                  <i class="fa fa-twitter fa-lg"></i>
+                </a>
+                <a href="#" class="links">
+                  <i class="fa fa-instagram fa-lg"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </div>

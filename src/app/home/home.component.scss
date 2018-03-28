@@ -1,0 +1,144 @@
+body {
+  font-family: 'Maven Pro', sans-serif;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+.btn {
+  font-weight: 500;
+  letter-spacing: .125rem;
+}
+
+#fullpage .section {
+  height: calc(100vh - 66px);
+  display: flex;
+  align-items: center;
+}
+
+#fp-nav ul li a span,
+.fp-slidesNav ul li a span {
+  background: #fd4b48;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: rgb(253, 75, 72);
+  text-transform: uppercase;
+  font-size: .8rem;
+  letter-spacing: .125rem;
+  font-weight: 500;
+  margin: 0 .5rem;
+}
+
+.cover-page {
+  /* display: flex;
+    height: 100vh; */
+  background-image: url(/assets/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.second-page {
+  background-image: url(/assets/asia-pacific-map.png);
+  background-repeat: no-repeat;
+  background-position: right center;
+  height: 100%;
+  display: flex;
+}
+
+.second-page .img-award {
+  max-width: 45%;
+  height: auto;
+}
+
+.title-large {
+  font-size: 4rem;
+  line-height: 3.6rem;
+  margin-bottom: 2rem;
+  color: #25274d;
+}
+
+/* .bg-flat {
+	background-image: url(layer4.png);
+    background-position: bottom;
+    background-repeat: repeat-x;
+} */
+
+.bp-1,
+.bp-2,
+.bp-3 {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+}
+
+.bp-1 {
+  background-image: url(/assets/bp-1.jpg);
+}
+
+.bp-2 {
+  background-image: url(/assets/bp-2.jpg);
+}
+
+.bp-3 {
+  background-image: url(/assets/bp-3.jpg);
+}
+
+.bp-desc {
+  min-height: 4rem;
+}
+
+.footer {
+  background: #25274d;
+  color: #fff;
+  padding: 5rem 0;
+}
+
+.footer .ft-title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  border-bottom: 3px solid #fd4b48;
+  padding-bottom: 5px;
+  margin-bottom: 2rem;
+  text-transform: uppercase;
+}
+
+.footer ul {
+  margin-top: 2rem;
+  -webkit-padding-start: 0;
+  list-style-type: none;
+}
+
+.footer .social-links {
+  margin-top: 2rem;
+}
+
+.footer ul li {
+  margin-bottom: .5rem;
+}
+
+.footer .links {
+  color: #fff;
+}
+
+.footer .links:hover {
+  color: #fd4b48;
+}
+
+@media (max-width: 640px) {
+  .cover-page .h1 {
+    font-size: 1.8rem;
+  }
+  .title-large {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-bottom: 1rem;
+  }
+}

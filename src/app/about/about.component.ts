@@ -8,20 +8,12 @@ import { DataService } from '../data.service';
   templateUrl: './about.component.html',
   styleUrls: ['./about.component.scss']
 })
+
 export class AboutComponent implements OnInit {
 
-  goals: any;
-
-  constructor(private route: ActivatedRoute, private router: Router, private _data: DataService) { 
-    this.route.params.subscribe(res => console.log(res.id));
-  }
+  constructor() { }
 
   ngOnInit() {
-    this._data.goal.subscribe(res => this.goals = res);
-  }
-
-  sendMeHome() {
-    this.router.navigate(['']);
   }
 
 }
