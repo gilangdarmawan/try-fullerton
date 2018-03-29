@@ -191,7 +191,7 @@
             Required
           </small>
         </div>
-        <button (click)="addUser(first_name.value, last_name.value, dob_value, email.value, phone.value, password.value)" [disabled]="angForm.pristine || angForm.invalid"
+        <button (click)="addUser(acc_owner.value, first_name.value, last_name.value, dob.value, email.value, phone.value, password.value, acc_type.value, country.value, city.value, security_question.value, confirm_security_question.value, security_answer.value, confirm_security_answer.value, education.value, trading_experience.value, trading_frequency.value, purpose_of_trading.value, annual_gross_income.value, net_worth.value, income_source.value, public_position.value, family_public_position.value, pref_language.value)" [disabled]="angForm.pristine || angForm.invalid"
           class="btn btn-primary">Submit</button>
       </form>
     </div>

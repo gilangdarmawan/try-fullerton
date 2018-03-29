@@ -29,7 +29,7 @@ export class DataService {
       phone: phone,
       password: password,
       acc_type: acc_type,
-      country:country,
+      country: country,
       city:city,
       security_question:security_question,
       confirm_security_question:confirm_security_question,
@@ -51,7 +51,7 @@ export class DataService {
   }
 
   getUser() {
-    const uri = 'http://192.168.0.102:8080/acc/listacc';
+    const uri = 'http://43.231.128.207:8080/acc/listacc';
     return this
       .http
       .get(uri)
@@ -61,7 +61,7 @@ export class DataService {
   }
 
   editUser(id) {
-    const uri = 'http://192.168.0.102:8080/acc/listacc' + id;
+    const uri = 'http://43.231.128.207:8080/acc/listacc' + id;
     return this
       .http
       .get(uri)
@@ -70,5 +70,15 @@ export class DataService {
       });
   }
 
-
+  updateUser(first_name, id) {
+    const uri = 'http://192.168.0.102:8080/acc/listacc' + id;
+    const obj = {
+      first_name: first_name
+    };
+    this
+      .http
+      .post(uri, obj)
+      .subscribe(res => console.log('Done'));
+  }
+  
 }

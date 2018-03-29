@@ -9,7 +9,7 @@
           <th scope="col">DoB</th>
           <th scope="col">Phone</th>
           <th scope="col">Email</th>
-          <th scope="col">Action</th>
+          <!-- <th scope="col">Action</th> -->
         </tr>
       </thead>
       <tbody>
@@ -19,7 +19,9 @@
           <td>{{ user.dob }}</td>
           <td>{{ user.phone }}</td>
           <td>{{ user.email }}</td>
-          <td><a routerLink="setting" class="btn btn-success">Edit</a></td>
+          <!-- <td>
+            <a [routerLink]="['/setting', user.id]" class="btn btn-success">Edit</a>
+          </td> -->
         </tr>
       </tbody>
     </table>

@@ -3,7 +3,7 @@ var Schema = mongoose.Schema;
 
 // Define collection and schema for Items
 var User = new Schema({
-  id: {
+  acc_owner: {
     type: String
   },
   first_name: {
@@ -13,15 +13,66 @@ var User = new Schema({
     type: String
   },
   dob: {
-    type: String
+    type: Date
   },
   phone: {
-    type: Number
+    type: String
   },
   email: {
     type: String
   },
   password: {
+    type: String
+  },
+  acc_type: {
+    type: String
+  },
+  country: {
+    type: String
+  },
+  city: {
+    type: String
+  },
+  security_question: {
+    type: String
+  },
+  confirm_security_question: {
+    type: String
+  },
+  security_answer: {
+    type: String
+  },
+  confirm_security_answer: {
+    type: String
+  },
+  education: {
+    type: String
+  },
+  trading_experience: {
+    type: String
+  },
+  trading_frequency: {
+    type: String
+  },
+  purpose_of_trading: {
+    type: String
+  },
+  annual_gross_income: {
+    type: String
+  },
+  net_worth: {
+    type: String
+  },
+  income_source: {
+    type: String
+  },
+  public_position: {
+    type: String
+  },
+  family_public_position: {
+    type: String
+  },
+  pref_language: {
     type: String
   }
 }, {

@@ -19,11 +19,11 @@ a:hover {
 
 #fp-nav ul li a span,
 .fp-slidesNav ul li a span {
-  background: #fd4b48;
+  background: #e3d9a6;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: rgb(253, 75, 72);
+  color:#e3d9a6;
   text-transform: uppercase;
   font-size: .8rem;
   letter-spacing: .125rem;
@@ -56,7 +56,7 @@ a:hover {
   font-size: 4rem;
   line-height: 3.6rem;
   margin-bottom: 2rem;
-  color: #25274d;
+  color: #000000;
 }
 
 /* .bg-flat {
@@ -96,7 +96,7 @@ a:hover {
 }
 
 .footer {
-  background: #25274d;
+  background: #000000;
   color: #fff;
   padding: 5rem 0;
 }
@@ -104,7 +104,7 @@ a:hover {
 .footer .ft-title {
   font-size: 1.4rem;
   font-weight: 500;
-  border-bottom: 3px solid #fd4b48;
+  border-bottom: 3px solid #e3d9a6;
   padding-bottom: 5px;
   margin-bottom: 2rem;
   text-transform: uppercase;
@@ -129,7 +129,7 @@ a:hover {
 }
 
 .footer .links:hover {
-  color: #fd4b48;
+  color: #e3d9a6;
 }
 
 @media (max-width: 640px) {
