@@ -12,7 +12,7 @@ a:hover {
 }
 
 #fullpage .section {
-  height: calc(100vh - 66px);
+  height: calc(100vh - 86px);
   display: flex;
   align-items: center;
 }
@@ -68,7 +68,7 @@ a:hover {
 .bp-1,
 .bp-2,
 .bp-3 {
-  height: 100vh;
+  height: calc(100vh - 86px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -77,6 +77,10 @@ a:hover {
   background-size: cover;
   background-position: center;
   color: #fff;
+}
+
+.bp-1 .title-large, .bp-2 .title-large, .bp-3 .title-large {
+  text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
 }
 
 .bp-1 {
