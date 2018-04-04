@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-import { AboutComponent } from './about/about.component';
 
 import { DataService } from './data.service';
 import { FullertonComponent } from './fullerton/fullerton.component';
@@ -17,18 +16,35 @@ import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 import { ProfileComponent } from './profile/profile.component';
 import { SettingComponent } from './setting/setting.component';
+import { NavbarComponent } from './component/navbar/navbar.component';
+import { FooterComponent } from './component/footer/footer.component';
+import { CeoMessageComponent } from './about/ceo-message/ceo-message.component';
+import { FullertonEdgeComponent } from './about/fullerton-edge/fullerton-edge.component';
+import { AwardComponent } from './about/award/award.component';
+import { SponsorshipComponent } from './about/sponsorship/sponsorship.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { CareerComponent } from './about/career/career.component';
+import { FoundationComponent } from './about/foundation/foundation.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    AboutComponent,
     FullertonComponent,
     LoginComponent,
     RegisterComponent,
     ProfileComponent,
-    SettingComponent
+    SettingComponent,
+    NavbarComponent,
+    FooterComponent,
+    CeoMessageComponent,
+    FullertonEdgeComponent,
+    AwardComponent,
+    SponsorshipComponent,
+    PageNotFoundComponent,
+    CareerComponent,
+    FoundationComponent
   ],
   imports: [
     BrowserModule,

@@ -99,43 +99,6 @@ a:hover {
   min-height: 4rem;
 }
 
-.footer {
-  background: #000000;
-  color: #fff;
-  padding: 5rem 0;
-}
-
-.footer .ft-title {
-  font-size: 1.4rem;
-  font-weight: 500;
-  border-bottom: 3px solid #e3d9a6;
-  padding-bottom: 5px;
-  margin-bottom: 2rem;
-  text-transform: uppercase;
-}
-
-.footer ul {
-  margin-top: 2rem;
-  -webkit-padding-start: 0;
-  list-style-type: none;
-}
-
-.footer .social-links {
-  margin-top: 2rem;
-}
-
-.footer ul li {
-  margin-bottom: .5rem;
-}
-
-.footer .links {
-  color: #fff;
-}
-
-.footer .links:hover {
-  color: #e3d9a6;
-}
-
 @media (max-width: 640px) {
   .cover-page .h1 {
     font-size: 1.8rem;
