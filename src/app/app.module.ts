@@ -30,6 +30,9 @@ import { CopyTradingComponent } from './trade/copy-trading/copy-trading.componen
 import { IntroducingBrokerComponent } from './partnership/introducing-broker/introducing-broker.component';
 import { MoneyManagerComponent } from './partnership/money-manager/money-manager.component';
 import { WhiteLabelComponent } from './partnership/white-label/white-label.component';
+import { FaqComponent } from './support/faq/faq.component';
+import { TermsComponent } from './support/terms/terms.component';
+import { ContactComponent } from './support/contact/contact.component';
 
 
 @NgModule({
@@ -55,7 +58,10 @@ import { WhiteLabelComponent } from './partnership/white-label/white-label.compo
     CopyTradingComponent,
     IntroducingBrokerComponent,
     MoneyManagerComponent,
-    WhiteLabelComponent
+    WhiteLabelComponent,
+    FaqComponent,
+    TermsComponent,
+    ContactComponent
   ],
   imports: [
     BrowserModule,
