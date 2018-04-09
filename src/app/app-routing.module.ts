@@ -12,6 +12,12 @@ import { SponsorshipComponent } from './about/sponsorship/sponsorship.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CareerComponent } from './about/career/career.component';
 import { FoundationComponent } from './about/foundation/foundation.component';
+import { SpreadTypesComponent } from './trade/spread-types/spread-types.component';
+import { FundingWithdrawalComponent } from './trade/funding-withdrawal/funding-withdrawal.component';
+import { CopyTradingComponent } from './trade/copy-trading/copy-trading.component';
+import { IntroducingBrokerComponent } from './partnership/introducing-broker/introducing-broker.component';
+import { MoneyManagerComponent } from './partnership/money-manager/money-manager.component';
+import { WhiteLabelComponent } from './partnership/white-label/white-label.component';
 
 const routes: Routes = [
   {
@@ -57,6 +63,30 @@ const routes: Routes = [
   {
     path: 'csr',
     component: FoundationComponent
+  },
+  {
+    path: 'spread-types',
+    component: SpreadTypesComponent
+  },
+  {
+    path: 'funding-and-withdrawal',
+    component: FundingWithdrawalComponent
+  },
+  {
+    path: 'copy-trading',
+    component: CopyTradingComponent
+  },
+  {
+    path: 'introducing-broker',
+    component: IntroducingBrokerComponent
+  },
+  {
+    path: 'money-manager',
+    component: MoneyManagerComponent
+  },
+  {
+    path: 'white-label',
+    component: WhiteLabelComponent
   },
   {
     path: '**',

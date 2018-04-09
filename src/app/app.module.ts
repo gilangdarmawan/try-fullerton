@@ -9,7 +9,6 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
-
 import { DataService } from './data.service';
 import { FullertonComponent } from './fullerton/fullerton.component';
 import { LoginComponent } from './login/login.component';
@@ -25,6 +24,12 @@ import { SponsorshipComponent } from './about/sponsorship/sponsorship.component'
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { CareerComponent } from './about/career/career.component';
 import { FoundationComponent } from './about/foundation/foundation.component';
+import { SpreadTypesComponent } from './trade/spread-types/spread-types.component';
+import { FundingWithdrawalComponent } from './trade/funding-withdrawal/funding-withdrawal.component';
+import { CopyTradingComponent } from './trade/copy-trading/copy-trading.component';
+import { IntroducingBrokerComponent } from './partnership/introducing-broker/introducing-broker.component';
+import { MoneyManagerComponent } from './partnership/money-manager/money-manager.component';
+import { WhiteLabelComponent } from './partnership/white-label/white-label.component';
 
 
 @NgModule({
@@ -44,7 +49,13 @@ import { FoundationComponent } from './about/foundation/foundation.component';
     SponsorshipComponent,
     PageNotFoundComponent,
     CareerComponent,
-    FoundationComponent
+    FoundationComponent,
+    SpreadTypesComponent,
+    FundingWithdrawalComponent,
+    CopyTradingComponent,
+    IntroducingBrokerComponent,
+    MoneyManagerComponent,
+    WhiteLabelComponent
   ],
   imports: [
     BrowserModule,

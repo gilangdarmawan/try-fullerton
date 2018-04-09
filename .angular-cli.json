@@ -54,6 +54,10 @@
     }
   },
   "defaults": {
+    "serve": {
+      "port": 3000,
+      "host": "192.168.0.112"
+    },
     "styleExt": "scss",
     "component": {}
   }

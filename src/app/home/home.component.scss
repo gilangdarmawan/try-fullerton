@@ -31,13 +31,27 @@ a:hover {
   margin: 0 .5rem;
 }
 
+// @keyframes test {
+//   0% {
+//     background-image: url(/assets/bg.jpg);
+//   }
+//   100% {
+//     background-image: url(/assets/bp-1.jpg);
+//   }
+// }
+
 .cover-page {
   /* display: flex;
     height: 100vh; */
-  background-image: url(/assets/bg.jpg);
+  // background-image: url(/assets/bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
 }
+
 
 .second-page {
   background-image: url(/assets/asia-pacific-map.png);

@@ -1,0 +1,32 @@
+.cover-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    background-image: url(/assets/bp-1.jpg);
+}
+.cover-title .title-large {
+    font-size: 4rem;
+    line-height: 3.6rem;
+    margin: 5rem 0;
+    text-shadow: 4px 4px 10px rgba(0, 0, 0, 0.6);
+}
+.no-padding {
+    -webkit-padding-start: 20px;    
+}
+.no-padding li {
+    padding-left: 10px;
+}
