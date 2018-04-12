@@ -13,11 +13,15 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
 import { CareerComponent } from './about/career/career.component';
 import { FoundationComponent } from './about/foundation/foundation.component';
 import { SpreadTypesComponent } from './trade/spread-types/spread-types.component';
+import { InstrumentComponent } from './trade/instrument/instrument.component';
 import { FundingWithdrawalComponent } from './trade/funding-withdrawal/funding-withdrawal.component';
 import { CopyTradingComponent } from './trade/copy-trading/copy-trading.component';
 import { IntroducingBrokerComponent } from './partnership/introducing-broker/introducing-broker.component';
 import { MoneyManagerComponent } from './partnership/money-manager/money-manager.component';
 import { WhiteLabelComponent } from './partnership/white-label/white-label.component';
+import { FaqComponent } from './support/faq/faq.component';
+import { TermsComponent } from './support/terms/terms.component';
+import { ContactComponent } from './support/contact/contact.component';
 
 const routes: Routes = [
   {
@@ -69,6 +73,10 @@ const routes: Routes = [
     component: SpreadTypesComponent
   },
   {
+    path: 'instruments',
+    component: InstrumentComponent
+  },
+  {
     path: 'funding-and-withdrawal',
     component: FundingWithdrawalComponent
   },
@@ -87,6 +95,18 @@ const routes: Routes = [
   {
     path: 'white-label',
     component: WhiteLabelComponent
+  },
+  {
+    path: 'faq',
+    component: FaqComponent
+  },
+  {
+    path: 'terms-and-conditions',
+    component: TermsComponent
+  },
+  {
+    path: 'contact',
+    component: ContactComponent
   },
   {
     path: '**',

@@ -30,3 +30,9 @@
 .no-padding li {
     padding-left: 10px;
 }
+@media (max-width: 992px) {
+    .cover-title .title-large {
+      font-size: 3rem;
+      text-align: center;
+    }
+  }

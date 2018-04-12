@@ -7,6 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FaqComponent implements OnInit {
 
+  title = "Frequently Asked Question";
   constructor() { }
 
   ngOnInit() {

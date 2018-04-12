@@ -4,6 +4,8 @@ import { NgModule } from '@angular/core';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 
@@ -33,6 +35,7 @@ import { WhiteLabelComponent } from './partnership/white-label/white-label.compo
 import { FaqComponent } from './support/faq/faq.component';
 import { TermsComponent } from './support/terms/terms.component';
 import { ContactComponent } from './support/contact/contact.component';
+import { InstrumentComponent } from './trade/instrument/instrument.component';
 
 
 @NgModule({
@@ -61,7 +64,8 @@ import { ContactComponent } from './support/contact/contact.component';
     WhiteLabelComponent,
     FaqComponent,
     TermsComponent,
-    ContactComponent
+    ContactComponent,
+    InstrumentComponent
   ],
   imports: [
     BrowserModule,
@@ -71,6 +75,7 @@ import { ContactComponent } from './support/contact/contact.component';
     FormsModule,
     ReactiveFormsModule,
     BrowserAnimationsModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
   ],
   providers: [DataService],
   bootstrap: [AppComponent]
